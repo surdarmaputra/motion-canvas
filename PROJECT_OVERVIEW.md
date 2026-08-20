@@ -31,9 +31,9 @@ flowchart LR
   B --> C["Editor UI<br/>preview + timeline"]
   D["Assets<br/>mp3 / png / mp4 / svg"] --> C
   C --> E{Export}
-  E -->|built-in| F["PNG/JPEG/WebP<br/>image sequence"]
-  E -->|@motion-canvas/ffmpeg| G["MP4 + audio"]
-  E -->|present| H["Live slides<br/>presentation mode"]
+  E -->|"built-in"| F["PNG/JPEG/WebP<br/>image sequence"]
+  E -->|"FFmpeg exporter"| G["MP4 + audio"]
+  E -->|"present"| H["Live slides<br/>presentation mode"]
   F --> I["Premiere / Resolve / CapCut"]
 ```
 
